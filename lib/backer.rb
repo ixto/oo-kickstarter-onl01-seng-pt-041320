@@ -8,10 +8,16 @@ class Backer
  
  def back_project(project)
    @backed_projects << project 
+   project.add_backer(self)
  end 
  
- def more_advanced_back_project
-   @backers << self 
- end 
+
 
 end 
+
+
+# def back_project(project)
+#     #binding.pry
+#     @backed_projects << project 
+#     project.add_backer(self)
+#     end
